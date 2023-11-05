@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lab 3 </title>
+</head>
+<body> 
+    <style>
+
+        body {
+         background-color: #FFC133; 
+         font-family: Arial, sans-serif;
+            }
+
+            table {
+            margin: 0 auto;
+            border-collapse: separate;
+            border-spacing: 5px;
+            width: 100%;
+            max-width: 800px;
+            margin-top: 20px;
+            border: 2px solid #800080; /* Purple border */
+            border-radius: 20px;
+            background-color: #FFF; /* White background */
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.4); /* White shadow */
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #800080; /* Purple border */
+            border-radius: 10px;
+        }
+
+        th {
+            background-color: #FFF; /* White header background */
+            color: #000; /* Black text */
+            font-weight: bold;
+        }
+
+        td {
+            background-color: #FFF; /* White cell background */
+        }
+
+        tr:nth-child(even) td {
+            background-color: #F0F0F0; /* Light gray for even rows */
+        }
+
+        tr:hover {
+            background-color: #FFF; /* White background on hover */
+        }
+
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+            height: 170px;
+            border: 3px solid #9a04a5;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle box shadow */
+            transform: scale(1.1); /* Add a slight zoom effect on hover */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.2); /* Zoom in a bit on hover */
+        }
+
+                /* Apply creative styles to the .biodata class */
+        th.biodata {
+            background: linear-gradient(135deg, #800080, #FFC133); /* Gradient background */
+            color: #FFF; /* White text color */
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+            border-radius: 20px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(128, 0, 128, 0.6); /* Purple shadow */
+            transition: transform 0.3s ease-in-out; /* Transition effect */
+            position: relative; /* Set the position to relative */
+            overflow: hidden; /* Hide overflowing content */
+        }
+
+        /* Add an animation for the .biodata class to move left and right */
+        @keyframes moveLeftAndRight {
+            0% {
+                left: 0; /* Start at the original position */
+            }
+            50% {
+                left: -20px; /* Move to the left */
+            }
+            100% {
+                left: 20px; /* Move to the right */
+            }
+        }
+
+        /* Apply animation to the .biodata class */
+        th.biodata:hover {
+            animation: moveLeftAndRight 2s linear infinite; /* Left and right animation on hover */
+        }
+      </style>
+      </head>
+      <body>
+
+<table>
+    <tr>
+        <th colspan="3" class="biodata"><i><b>BIODATA</i></b></th>
+    </tr>
+    <tr>
+        <td>NAME</td>
+        <td>SUTANTH KUNSURAMAN</td>
+        <td><img src="PHOTO.jpg" alt="img" class="img"></src></td>
+    </tr>
+    <tr>
+        <td>DATE OF BIRTH</td>
+        <td colspan="2">13 MAY 2000</td>
+    </tr>
+    <tr>
+        <td>RELIGION</td>
+        <td colspan="2">HINDU</td>
+    </tr>
+    <tr">
+        <td>RACE</td>
+        <td colspan="2">INDIA</td>
+    </tr>
+    <tr>
+        <td rowspan="4">ADDRESS</td>
+        <td>STREET</td>
+        <td>TAMAN KRISTAL</td>
+    </tr>
+    <tr>
+        <td>TOWN</td>
+        <td>SUNGAI PETANI</td>
+    </tr>
+    <tr>
+        <td>DISTRICT</td>
+        <td>KUALA MUDA</td>
+    </tr>
+    <tr>
+        <td>STATE</td>
+        <td>KEDAH</td>
+    </tr>
+    <tr>
+        <td rowspan="3">CONTACT</td>
+        <td>MOBILE PHONE</td>
+        <td>01111282030</td>
+    </tr>
+    <tr>
+        <td>SOCIAL MEDIA</td>
+        <td><a href="https://www.instagram.com/sutanth_30">sutanth_30</a></td>
+    </tr>
+    <tr>
+        <td>WEBSITE</td>
+        <td>www.</td>
+    </tr>
+    <tr>
+        <td>COURSE AND INSTITUTION</td>
+        <td colspan="2">BACHELOR OF COMPUTER SCIENCE (SOFTWARE ENGINEERING) WITH HONOURS</td>
+    </tr>
+    <tr>
+        <td>PROGRAMMING SKILLS</td>
+        <td colspan="2">HTML, SQL, JAVA, SWITCH</td>
+    </tr>
+    <tr>
+        <td>PERSONAL INTEREST</td>
+        <td colspan="2">PLAYING GAME</td>
+    </tr>
+    <tr>
+        <td>FUTURE PLAN IN 2024</td>
+        <td colspan="2">BECOME A PROGRAMMER</td>
+    </tr>
+    <tr>
+        <td>HOBBIES</td>
+        <td colspan="2">PLAYING GAME</td>
+    </tr>
+    <tr>
+        <td rowspan="2">CUMPUS LIFE</td>
+        <td colspan="2"><li>ENJOY VACATIONS AND TRIPS WITH FRIENDS</li></td>
+</tr>
+<tr>
+    <td colspan="2"><li>CELEBRATED VARIOUS FESTIVAL AND CULTURAL EVENTS</li></td>
+</tr>
+</table>
+</body>
+</html>
