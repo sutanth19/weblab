@@ -113,6 +113,39 @@
         th.biodata:hover {
             animation: moveLeftAndRight 2s linear infinite; 
         }
+        .audio-container {
+            display: flex;
+            align-items: center;
+        }
+
+        #mute-button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            animation: buttonAnimation 1s linear infinite;
+        }
+
+        #mute-button:hover {
+            background-color: #555;
+            animation: none; /* Disable animation on hover */
+        }
+
+        /* Keyframes for the button animation */
+        @keyframes buttonAnimation {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
       </style>
       </head>
       <body>
@@ -196,5 +229,14 @@
     <td colspan="2"><li>CELEBRATED VARIOUS FESTIVAL AND CULTURAL EVENTS</li></td>
 </tr>
 </table>
+<div class="audio-container">
+        <!-- Add an audio element with the song source -->
+        <audio id="audio-player" controls>
+            <source src="ordinary-person-leo-song-mp3-ringtone-tkkb.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <!-- Add a mute/unmute button on the left side -->
+        <button id="mute-button">Mute</button>
+    </div>
 </body>
 </html>
