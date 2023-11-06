@@ -6,10 +6,20 @@
 <body> 
     <style>
 
-        body {
-         background-color: #FFC133; 
-         font-family: Arial, sans-serif;
+            body {   
+            background: linear-gradient(135deg, #FFC133, #FF3C8C);
+            font-family: 'Arial', sans-serif;
+            animation: colorChange 10s ease-in-out infinite alternate;
+           }
+
+           @keyframes colorChange {
+            0% {
+                background: linear-gradient(135deg, #FFC133, #FF3C8C);
             }
+            100% {
+                background: linear-gradient(135deg, #FF3C8C, #FFC133);
+            }
+           }
 
             table {
             margin: 0 auto;
